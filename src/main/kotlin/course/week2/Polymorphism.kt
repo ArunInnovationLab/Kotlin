@@ -3,6 +3,8 @@ package course.week2
 
 // A possibility to specify a type that accepts objects produced using different classes
 
+//The possibility for an object to have many forms, so to be created using different classes
+
 interface Animal{
     // It can only have abstract methods and variables
     val breed: String
@@ -53,6 +55,7 @@ fun main(){
     val cat = Cat("nb","ashj")
 //    play(Cat("nb","ashj"))// err
 //    play(jk)
+
 
     play2(cat)
 

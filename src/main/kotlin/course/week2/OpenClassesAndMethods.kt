@@ -4,13 +4,25 @@ package course.week2
 // It also becomes its subclass, which means that it can be used wherever its parent is expected
 
 open class Mammal {
-    fun feedCildren(){
 
+    fun feedChildren() {
+        println("feeding children")
     }
 }
 
-class Dog: Mammal {
+class Doggg: Mammal() {
     fun fetchStick(){
-
+        println("fetching stick")
     }
+}
+
+fun feed(mammal: Mammal) {
+    mammal.feedChildren()
+}
+
+fun main(){
+    val dogg = Doggg()
+    dogg.feedChildren()
+    dogg.fetchStick()
+    feed(dogg)
 }
